@@ -28,7 +28,7 @@
 
 ## 📸 Sample Outputs
 
-![Funnel Completion](screenshots/funnel_result.png)
+![Funnel Completion](screenshots/Device Analysis.png)
 *Funnel completion across steps (session & user level)*
 
 ![Dashboard Main](screenshots/dashboard_main.png)
