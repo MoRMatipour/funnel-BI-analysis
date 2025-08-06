@@ -31,7 +31,8 @@
 ![Funnel Chart]<p align="center">
   <img src="https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Device%20Analysis.png?raw=true" width="66%">
 </p>
-You can see the Power BI file [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/dashboard/funell%20visualize.pbix)
+You can see the Power BI file [here](https://github.com/MoRMatipour/funnel-BI-analysis/raw/main/dashboard/funell%20visualize.pbix)
+
 *Funnel completion across steps (session & user level)*
 
 ![Dashboard Main](screenshots/dashboard_main.png)
