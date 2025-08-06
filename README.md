@@ -28,7 +28,7 @@
 
 ## 📸 Sample Outputs
 
-![Funnel Completion](screenshots/Device Analysis.png)
+![Funnel Chart]([https://your-link.com/image.png](https://github.com/MoRMatipour/funnel-BI-analysis/blob/4f134da171fb5d654824756b33ac3336c746674e/screenshots/Device%20Analysis.png))
 *Funnel completion across steps (session & user level)*
 
 ![Dashboard Main](screenshots/dashboard_main.png)
