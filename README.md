@@ -29,12 +29,13 @@ This stack was chosen to replicate a real-world business intelligence workflow, 
 
 ## Project Stages and Files
 This project is structured into key analytical stages, each reflecting a real-world data analysis workflow, entirely performed using SQL in Google BigQuery.  
-- Step 1: Business Understanding and KPI Design  
-- Step 2: Data Exploration and Modeling  
-- Step 3: Revenue & Marketing Channel Analysis  
-- Step 4: Customer Segmentation and Behavioral Profiling  
-- Step 5: Funnel Behavior Analysis  
-- Step 6: Visualization and Insights Dashboard  
+- [Step 1: Business Understanding and KPI Design](#step-1-business-understanding-and-kpi-design)  
+- [Step 2: Data Exploration and Modeling](#step-2-data-exploration-and-modeling)  
+- [Step 3: Revenue & Marketing Channel Analysis](#step-3-revenue--marketing-channel-analysis)  
+- [Step 4: Customer Segmentation and Behavioral Profiling](#step-4-product-category--customer-segmentation)  
+- [Step 5: Funnel Behavior Analysis](#step-5-device--browser-performance-analysis)  
+- [Step 6: Visualization and Insights Dashboard](#step-6-funnel-behavior-analysis-session-level-and-user-level)  
+- [Step 7: Visualization and Insights Dashboard](#step-7-visualization-and-insights-dashboard)  
 
 ---
 
