@@ -70,7 +70,7 @@ This stage helped ensure the analytical logic used in subsequent queries aligned
 ### Step 2: Data Exploration and Modeling  
 Analyzed the Google Analytics sample dataset in BigQuery to understand its nested structure and key fields. Used `UNNEST` to flatten repeated data and cleaned placeholder values to prepare for accurate KPI calculations. This groundwork enabled precise revenue, segmentation, and funnel analyses.  
 
-You can find the dataset schema diagram [here] (insert link to schema image).
+(https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/sample%20schema.png?raw=true).
 
 ---
 
