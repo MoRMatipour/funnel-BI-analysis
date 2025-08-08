@@ -24,7 +24,6 @@ The following technologies were used to build and deliver this project:
 - Data Exploration & Transformation: Google BigQuery  
 - Data Source: Google Analytics 4 BigQuery Export  
 - Dashboard Development: Power BI  
-- Repository & Documentation: GitHub (for SQL scripts, results, and README)  
 
 This stack was chosen to replicate a real-world business intelligence workflow, leveraging cloud-based querying, analytical processing, and modern data visualization tools.
 
