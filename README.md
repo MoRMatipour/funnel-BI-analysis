@@ -78,7 +78,7 @@ Analyzed the Google Analytics sample dataset in BigQuery to understand its neste
 Measured revenue trends over time and assessed the impact of marketing channels on overall performance.
 
 - **Daily & Monthly Revenue Trends** – Converted raw date strings to standard format, aggregated daily totals, and used window functions for monthly rollups. This revealed clear seasonality and performance peaks.  
-You can find the query [here].
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/01_%20Daily%20and%20Monthly%20Revenue%20Trends.sql).
 
 - **Revenue by Traffic Source** – Grouped revenue by `trafficSource.source` and calculated each channel’s percentage share. This highlighted the highest-converting acquisition channels.  
 You can find the query [here].
