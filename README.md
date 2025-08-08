@@ -79,9 +79,11 @@ Measured revenue trends over time and assessed the impact of marketing channels 
 
 - **Daily & Monthly Revenue Trends** – Converted raw date strings to standard format, aggregated daily totals, and used window functions for monthly rollups. This revealed clear seasonality and performance peaks.  
 You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/01_%20Daily%20and%20Monthly%20Revenue%20Trends.sql).
+![Monthly and daily Revenues](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Monthly%20and%20daily%20Revenues.png?raw=true)
 
 - **Revenue by Traffic Source** – Grouped revenue by `trafficSource.source` and calculated each channel’s percentage share. This highlighted the highest-converting acquisition channels.  
-You can find the query [here].
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/02_%20Revenue%20by%20Traffic%20Source.sql).
+![Revenue by Traffic Sources](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Revenue%20by%20Traffic%20Source.png?raw=true)
 
 ---
 
@@ -89,10 +91,12 @@ You can find the query [here].
 Evaluated product performance, category contribution, and customer types to guide merchandising and marketing strategies.
 
 - **Product & Category Revenue Contribution** – Used `UNNEST` to access product-level data, aggregated revenue, and filtered out missing categories. The results showed top-performing products and profitable categories.  
-You can find the query [here].
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/03_%20Product%20%26%20Category%20Revenue%20Contribution.sql).
+![Product Analysis](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Product%20Analysis.png?raw=true)
 
 - **New vs. Returning Customer Segmentation** – Segmented users via `totals.newVisits` and calculated revenue, bounce rate, time on site, and transactions per group. This exposed behavioral differences that can guide targeted campaigns.  
-You can find the query [here].
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/04_%20New%20vs.%20Returning%20Customer%20Segmentation.sql).
+![Customer Segmentation](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Visitor%20Type%20Analysis.png?raw=true)
 
 ---
 
@@ -101,16 +105,16 @@ Analyzed how different devices and browsers impact user engagement and revenue.
 
 - Grouped users by device category (desktop, mobile, tablet) and browser type. Calculated visits, revenue, bounce rate, and conversion rate for each.  
 - These metrics highlight which platforms perform best and reveal areas needing UX or technical improvements.  
-You can find the query [here].
-
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/05_%20Device%20%26%20Browser%20Performance.sql).
+![Device Analysis](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Device%20Analysis.png?raw=true)
 ---
 
 ### Step 6: Funnel Behavior Analysis (Session-Level and User-Level)  
-- **Session-Level Funnel Analysis:** Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks. You can find the query [here].  
-- **User-Level Funnel Completion Analysis:** Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends. You can find the query [here].  
+- **Session-Level Funnel Analysis:** Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).  
+- **User-Level Funnel Completion Analysis:** Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/07_%20User%20Level%20Funell%20Analysis%20.sql).  
 
 These combined views help optimize the ecommerce funnel by showing where users convert or drop off.
-
+![Funells](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Funell%20Analysis.png?raw=true)
 ---
 
 ### Step 7: Visualization and Insights Dashboard  
