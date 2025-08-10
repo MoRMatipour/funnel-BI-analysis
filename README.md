@@ -80,6 +80,9 @@ Measured revenue trends over time and assessed the impact of marketing channels 
 - **Daily & Monthly Revenue Trends** – Converted raw date strings to standard format, aggregated daily totals, and used window functions for monthly rollups. This revealed clear seasonality and performance peaks.  
 You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/01_%20Daily%20and%20Monthly%20Revenue%20Trends.sql).
 ![Monthly and daily Revenues](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Monthly%20and%20daily%20Revenues.png?raw=true)
+May and June 2017 revenue stayed steady ($121M) before rising in July ($124M), with strong weekday sales and weak weekends.
+Notable spikes on June 12 ($12.49M) and July 18 ($17M) suggest successful campaigns, while July 4 saw a sharp holiday drop.
+Focus opportunities: boost weekend sales, replicate high-performing campaigns, and plan around holiday dips.
 
 - **Revenue by Traffic Source** – Grouped revenue by `trafficSource.source` and calculated each channel’s percentage share. This highlighted the highest-converting acquisition channels.  
 You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/02_%20Revenue%20by%20Traffic%20Source.sql).
