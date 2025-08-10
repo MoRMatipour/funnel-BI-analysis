@@ -132,7 +132,9 @@ The funnel shows a strong initial engagement with about 85% of sessions and user
 
 ### Step 7: Visualization and Insights Dashboard  
 I imported the results from BigQuery queries directly into Power BI, then created clear and interactive visualizations to showcase key metrics and funnel insights. This dashboard helps business decision-makers easily understand complex data and track performance effectively.
-Here is the link to my Power BI file: [https://github.com/MoRMatipour/funnel-BI-analysis/tree/main/dashboard].
+[Here is the link to my Power BI file](https://github.com/MoRMatipour/funnel-BI-analysis/tree/main/Dashboard).
+![Dashboard](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Visualization%20Image.png?raw=true)
+
 
 ---
 
