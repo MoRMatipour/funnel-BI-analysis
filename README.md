@@ -3,7 +3,7 @@ Advanced BigQuery + Power BI project analyzing user drop-offs across the e-comme
 
 
 ## Project Overview
-Online retailers often face high drop-off rates between browsing and purchasing. This project analyzes user journeys through the purchase funnel, identifying bottlenecks and conversion opportunities.
+Online retailers often face high drop-off rates between browsing and purchasing. This project analyzes user journeys through the purchase funnel, identifying bottlenecks and key drop-off points, and provides actionable insights to improve conversion rates.
 Using Google Analytics e-commerce data in BigQuery and Power BI visualizations, I built an end-to-end analysis system highlighting critical drop-off points and their impact on revenue.
 
 ## Objective
