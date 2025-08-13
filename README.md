@@ -219,6 +219,7 @@ ORDER BY
     WHEN last_step_reached = 'Step 4: Transaction Completed' THEN 4
     ELSE 5
   END;
+
 - **User-Level Funnel Completion Analysis:** Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/07_%20User%20Level%20Funell%20Analysis%20.sql).
 - 
 
