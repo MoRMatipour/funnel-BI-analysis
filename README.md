@@ -1,5 +1,9 @@
 # User Journey & Conversion Funnel (BigQuery SQL)
 
+## Project Overview
+Online retailers often face high drop-off rates between browsing and purchasing. This project analyzes user journeys through the purchase funnel, identifying bottlenecks and conversion opportunities.
+Using Google Analytics e-commerce data in BigQuery and Power BI visualizations, I built an end-to-end analysis system highlighting critical drop-off points and their impact on revenue.
+
 ## Objective
 In this project, I designed and implemented an end-to-end funnel behavior analysis system using SQL and Google BigQuery:
 - Extracted eCommerce user interaction data from the Google Analytics sample dataset available in BigQuery.
