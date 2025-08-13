@@ -1,4 +1,6 @@
 # User Journey & Conversion Funnel (BigQuery SQL)
+Advanced BigQuery + Power BI project analyzing user drop-offs across the e-commerce purchase funnel to drive conversion optimization.
+
 
 ## Project Overview
 Online retailers often face high drop-off rates between browsing and purchasing. This project analyzes user journeys through the purchase funnel, identifying bottlenecks and conversion opportunities.
