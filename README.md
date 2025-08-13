@@ -141,6 +141,29 @@ I imported the results from BigQuery queries directly into Power BI, then create
 [Here is the link to my Power BI file](https://github.com/MoRMatipour/funnel-BI-analysis/tree/main/Dashboard).
 ![Dashboard](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Visualization%20Image.png?raw=true)
 
+## **Key Findings**   
+- Only **0.02%** of all sessions completed a purchase, with the largest drop-off occurring before “Product View,” indicating users are not engaging with products early in their journey.  
+- Checkout abandonment remains high — nearly **70%** of users who reach checkout never complete the transaction.  
+- Returning visitors convert at nearly **3×** the rate of first-time visitors, showing strong potential in retargeting efforts.  
+- **Desktop** accounts for **96% of revenue**, with mobile and tablet conversions being almost negligible.  
+- Direct and Organic Search channels drive most transactions, while Paid Search shows poor ROI.  
+- A few high-value product categories contribute disproportionately to sales, suggesting opportunities for cross-selling and better product placement.  
+
+## **Recommendations**  
+
+### **Funnel Optimization**  
+- **Improve early engagement**: Redesign homepage and category pages to highlight best-selling products and encourage product views.  
+- **Reduce checkout abandonment**: Simplify checkout process, add guest checkout option, and provide clear shipping & return policies.  
+- **Leverage returning visitors**: Implement retargeting campaigns and loyalty programs to capitalize on higher conversion rates.  
+
+### **Channel & Device Strategy**  
+- **Boost mobile performance**: Optimize site speed and user experience on mobile to tap into potential untapped revenue.  
+- **Reallocate marketing budget**: Reduce spending on Paid Search with low ROI and invest more in Direct & Organic channels.  
+
+### **Product Strategy**  
+- **Expand top categories**: Introduce related products and bundles for high-value categories.  
+- **Enhance cross-selling**: Recommend complementary products during cart and checkout stages.  
+
 
 ---
 
