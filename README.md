@@ -21,13 +21,9 @@ The sections below will explain additional details on the structure, queries, an
 - [Dataset Used](#dataset-used)
 - [Technologies](#technologies)
 - [Project Stages and Files](#project-stages-and-files)
-  - [Step 1: Business Understanding and KPI Design](#step-1-business-understanding-and-kpi-design)
-  - [Step 2: Data Exploration and Modeling](#step-2-data-exploration-and-modeling)
-  - [Step 3: Revenue & Marketing Channel Analysis](#step-3-revenue--marketing-channel-analysis)
-  - [Step 4: Product, Category & Customer Segmentation](#step-4-product-category--customer-segmentation)
-  - [Step 5: Device & Browser Performance Analysis](#step-5-device--browser-performance-analysis)
-  - [Step 6: Funnel Behavior Analysis (Session-Level and User-Level)](#step-6-funnel-behavior-analysis-session-level-and-user-level)
-  - [Step 7: Visualization and Insights Dashboard](#step-7-visualization-and-insights-dashboard)
+- [Key Findings](#key-findings)
+- [Recommendations](#recommendations)
+
 
 ## Dataset Used
 This project uses the Google Analytics 4 BigQuery eCommerce dataset, which captures user interactions on an online merchandise store. The dataset includes detailed fields such as session and user identifiers, event timestamps, page paths, traffic sources, product views, add-to-cart actions, checkout steps, and purchase transactions.
