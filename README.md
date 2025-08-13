@@ -121,7 +121,104 @@ Desktop drives the majority of visits and revenue with the highest conversion ra
 ---
 
 ### Step 6: Funnel Behavior Analysis (Session-Level and User-Level)  
-- **Session-Level Funnel Analysis:** Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).  
+- **Session-Level Funnel Analysis:** Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks. 
+Tracks how far each session progresses through the ecommerce funnel using GA session and hit-level data.  
+Key techniques: CTEs, UNNEST(), conditional aggregation, CASE statements, and percentage calculations.You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).
+<details>
+  <summary>Click to expand SQL code</summary>
+
+```sql
+-- SESSION-LEVEL ECOMMERCE FUNNEL ANALYSIS
+-- Tracks session progression through the ecommerce funnel.
+
+WITH base_data AS (
+  SELECT
+    visitId AS session_id,
+    fullVisitorId AS user_id,
+    visitStartTime,
+    PARSE_DATE('%Y%m%d', date) AS session_date,
+    totals.transactions AS total_transactions,
+    totals.transactionRevenue AS total_revenue,
+    hits.type AS hit_type,
+    hits.page.pagePath AS page_path,
+    CAST(hits.eCommerceAction.action_type AS INT64) AS ecommerce_action_type
+  FROM
+    `bigquery-public-data.google_analytics_sample.ga_sessions_*`,
+    UNNEST(hits) AS hits
+  WHERE
+    _TABLE_SUFFIX BETWEEN '20170701' AND '20170731'
+),
+
+session_flags AS (
+  SELECT
+    session_id,
+    user_id,
+    visitStartTime,
+    1 AS visited_site_flag,
+    MAX(IF(hit_type = 'PAGE' AND page_path IS NOT NULL AND page_path != '', 1, 0)) AS page_view_flag,
+    MAX(IF(ecommerce_action_type = 2, 1, 0)) AS checkout_flag,
+    MAX(IF(total_transactions IS NOT NULL AND total_transactions > 0, 1, 0)) AS transaction_flag
+  FROM base_data
+  GROUP BY session_id, user_id, visitStartTime
+),
+
+funnel_steps AS (
+  SELECT
+    session_id,
+    user_id,
+    CASE
+      WHEN transaction_flag = 1 THEN 'Step 4: Transaction Completed'
+      WHEN checkout_flag = 1 THEN 'Step 3: Reached Checkout'
+      WHEN page_view_flag = 1 THEN 'Step 2: Viewed Any Page'
+      ELSE 'Step 1: Visited Site'
+    END AS last_step_reached
+  FROM session_flags
+),
+
+funnel_summary AS (
+  SELECT
+    last_step_reached,
+    COUNT(*) AS session_count
+  FROM funnel_steps
+  GROUP BY last_step_reached
+),
+
+total_sessions AS (
+  SELECT COUNT(*) AS total FROM session_flags
+),
+
+final_summary AS (
+  SELECT
+    'Step 1: Visited Site (Total Sessions)' AS last_step_reached,
+    total AS session_count
+  FROM total_sessions
+
+  UNION ALL
+
+  SELECT
+    last_step_reached,
+    session_count
+  FROM funnel_summary
+  WHERE last_step_reached != 'Step 1: Visited Site'
+)
+
+SELECT
+  last_step_reached,
+  session_count,
+  ROUND(100.0 * session_count /
+        (SELECT session_count
+         FROM final_summary
+         WHERE last_step_reached = 'Step 1: Visited Site (Total Sessions)'), 2)
+         AS percentage_of_total_sessions
+FROM final_summary
+ORDER BY
+  CASE
+    WHEN last_step_reached = 'Step 1: Visited Site (Total Sessions)' THEN 1
+    WHEN last_step_reached = 'Step 2: Viewed Any Page' THEN 2
+    WHEN last_step_reached = 'Step 3: Reached Checkout' THEN 3
+    WHEN last_step_reached = 'Step 4: Transaction Completed' THEN 4
+    ELSE 5
+  END;
 - **User-Level Funnel Completion Analysis:** Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/07_%20User%20Level%20Funell%20Analysis%20.sql).
 - 
 
