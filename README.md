@@ -122,8 +122,7 @@ Desktop drives the majority of visits and revenue with the highest conversion ra
 
 ### Step 6: Funnel Behavior Analysis (Session-Level and User-Level)  
 - **Session-Level Funnel Analysis:** Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks. 
-Tracks how far each session progresses through the ecommerce funnel using GA session and hit-level data.  
-Key techniques: CTEs, UNNEST(), conditional aggregation, CASE statements, and percentage calculations.You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).
+This advanced query tracks the deepest funnel step reached within each session using CTEs, UNNEST(), conditional aggregation, CASE statements, and subqueries to calculate session counts and drop-off percentages.You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).
 <details>
   <summary>Click to expand SQL code</summary>
 
