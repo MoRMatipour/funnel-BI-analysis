@@ -224,9 +224,9 @@ ORDER BY
 
 - **User-Level Funnel Completion Analysis:** Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/07_%20User%20Level%20Funell%20Analysis%20.sql).
 This advanced query calculates each user’s highest funnel step across sessions using CTEs, UNNEST(), conditional aggregation, CASE statements, and subqueries to compute counts and percentages per step.
-
 <details>
   <summary>Click to expand SQL code</summary>
+
 ```sql
 --  Funnel Analysis: User-Level Funnel Completion Across Sessions
 -- This query identifies the highest funnel step each user reached, then aggregates totals per step.
@@ -344,6 +344,7 @@ ORDER BY
   END;
 ```
 </details>
+
 
 These combined views help optimize the ecommerce funnel by showing where users convert or drop off.
 ![Funells](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/screenshots/Funell%20Analysis.png?raw=true)
