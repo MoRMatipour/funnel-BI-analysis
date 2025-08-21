@@ -120,9 +120,11 @@ You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/
 Desktop drives the majority of visits and revenue with the highest conversion rate and lower bounce rate. Mobile has many visits but very low revenue and conversion, indicating a need for better mobile optimization. Tablet shows moderate performance but also low conversion, suggesting room for improvement across non-desktop devices.
 ---
 
-### Step 6: Funnel Behavior Analysis (Session-Level and User-Level)  
-- **Session-Level Funnel Analysis:** Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks. 
-This advanced query tracks the deepest funnel step reached within each session using CTEs, UNNEST(), conditional aggregation, CASE statements, and subqueries to calculate session counts and drop-off percentages.You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).
+### Step 6: Funnel Behavior Analysis  
+- **Session-Level Funnel Analysis:**  
+Tracked funnel steps reached within each session and calculated drop-off rates to identify conversion bottlenecks.  
+This advanced query uses **CTEs**, ``UNNEST()``, **conditional aggregation**, ``CASE`` statements, and **subqueries** to calculate session counts and drop-off percentages.  
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/06_%20Session%20level%20Funnell%20Analysis.sql).
 
 ```sql
 -- SESSION-LEVEL ECOMMERCE FUNNEL ANALYSIS
@@ -218,9 +220,10 @@ ORDER BY
   END;
 ```
 
-- **User-Level Funnel Completion Analysis:** Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends. You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/07_%20User%20Level%20Funell%20Analysis%20.sql).
-This advanced query calculates each user’s highest funnel step across sessions using CTEs, UNNEST(), conditional aggregation, CASE statements, and subqueries to compute counts and percentages per step.
-
+- **User-Level Funnel Completion Analysis:**  
+Aggregated funnel progress across all sessions per user to reveal long-term engagement and conversion trends.  
+This advanced query calculates each user’s highest funnel step across sessions using **CTEs**, ``UNNEST()``, **conditional aggregation**, ``CASE`` statements, and **subqueries** to compute counts and percentages per step.  
+You can find the query [here](https://github.com/MoRMatipour/funnel-BI-analysis/blob/main/sql/07_%20User%20Level%20Funell%20Analysis%20.sql).
 ```sql
 --  Funnel Analysis: User-Level Funnel Completion Across Sessions
 -- This query identifies the highest funnel step each user reached, then aggregates totals per step.
